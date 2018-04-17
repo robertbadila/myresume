@@ -1,0 +1,133 @@
+.Contact{
+  height:700px;
+  position:relative;
+  box-shadow: 1px 4px 3px -1px rgba(0,0,0,0.75), 1px 5px 19px -1px rgba(0,0,0,0.75);
+  z-index:991;
+  font-family:'Lato';
+}
+.Contact h1{
+  left:54%;
+  top:22%;
+  transform: translate(-50%, -50%);
+  margin:0;
+  color:#CCC;
+  position:absolute;
+  letter-spacing: 2px;
+  font-weight: 300;
+  width:800px;
+  font-size:40px;
+}
+
+.Contact h2{
+  left:50%;
+  top:93%;
+  transform: translate(-45%, -50%);
+  margin:0;
+  color:#CCC;
+  position:absolute;
+  letter-spacing: 2px;
+  font-weight: 300;
+  font-size:32px;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Lato:100,300,400);
+
+#form {
+  position: relative;
+  width:700px;
+  top:53%;
+  left:50%;
+  transform:translate(-50%,-50%);
+}
+
+input {
+  font-family: 'Lato', sans-serif;
+  font-size: 0.875em;
+  width:700px;
+  height: 70px;
+  padding: 0px 15px 0px 15px;
+  
+  background: rgba(0,0,0,0.9);
+  outline: none;
+  color: #726659;
+  
+  border: solid 1px rgba(45,0,0,1);
+  border-bottom: none;
+  
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+}
+
+input:hover {
+  background: #b3aca7;
+  color: rgba(45,0,0,1);
+  border: solid 1px #b3aca7;
+}
+input:hover::placeholder{
+  color:rgba(45,0,0,1);
+}
+
+textarea {
+  width: 700px;
+  max-width: 700px;
+  min-width:700px;
+  height: 110px;
+  min-height:100px;
+  max-height: 130px;
+  padding: 15px;
+  background:rgba(0,0,0,0.9);
+  outline: none;
+  
+  color: #726659;
+  font-family: 'Lato', sans-serif;
+  font-size: 0.875em;
+  
+  border:none;
+  border-top:solid 1px rgba(45,0,0,1);
+  border-left: solid 1px rgba(45,0,0,1);
+  border-right: solid 1px rgba(45,0,0,1);
+  
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+}
+
+textarea:hover {
+  background: #b3aca7;
+  color: rgba(45,0,0,1);
+  border: solid 1px #b3aca7;
+}
+
+textarea:hover::placeholder{
+  color: rgba(45,0,0,1);
+}
+
+#submit {
+  width: 732px;
+  
+  padding: 0;
+  margin: -5px 0px 0px 0px;
+  
+  font-family: 'Lato', sans-serif;
+  font-size: 0.875em;
+  color: #b3aca7;
+  
+  outline:none;
+  cursor: pointer;
+  
+  border-left: solid 1px rgba(45,0,0,1);
+  border-right: solid 1px rgba(45,0,0,1);
+  border-bottom: solid 1px rgba(45,0,0,1);
+
+  border-top: none;
+}
+
+#submit:hover {
+  color: #e2dedb;
+  border: solid 2px rgba(45,0,0,1);
+  border-top: none;
+  color:rgba(45,0,0,1);
+}

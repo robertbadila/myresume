@@ -1,0 +1,11 @@
+.getIn-appear{
+  opacity:0;
+  transform:scaleY(.3);
+}
+
+.getIn-appear.getIn-appear-active{
+  opacity:1;
+  transform:scaleY(1);
+  transition:all .9s ease-out;
+  transition-delay:.5s;
+}

@@ -1,0 +1,146 @@
+.navbar{
+  height:65px;
+  width:100%;
+  background-color:rgba(0,0,0,1);
+  margin:0;
+  position:fixed;
+  z-index:999;
+  display:block;
+}
+
+.logo{
+  position:absolute;
+  top:50%;
+  left:20px;
+  transform:translateY(-50%);
+  color:white;
+  opacity:.3;
+}
+
+.logo h2{
+  margin:0;
+}
+
+.nav{
+  position:absolute;
+  top:50%;
+  right:30px;
+  transform:translateY(-50%);
+  
+}
+
+.nav ul{
+  margin:0;
+  padding:0;
+}
+
+.nav ul li{
+  display:inline-block;
+  text-align:center;
+}
+
+.links{
+  padding:2em 1em;
+  text-decoration:none;
+  color:#ccc;
+  text-transform:uppercase;
+  font-size:15px;
+  transition:all .2s linear;
+  position:relative;
+}
+
+.links:hover{
+  color:#f4f4f4;
+}
+
+.links:before{
+  content:'';
+  height:2px;
+  width:80%;
+  display:block;
+  position:absolute;
+  top:25px;
+  left:8.9px;
+  background-color:rgba(45, 0, 0, 1);
+  opacity:0.01;
+  transform:scaleX(0);
+  transition:all .2s linear;
+}
+
+.links:hover:before{
+  opacity:.7;
+  transform:scaleX(1);
+}
+
+.links:active:before{
+  opacity:1;
+  transform:scaleX(1);
+  background-color:rgba(255, 255, 255, 1);
+}
+
+.links:focus:before{
+  opacity:1;
+  transform:scaleX(1);
+  background-color:rgba(45, 0, 0, 1);
+}
+
+
+.options{
+  position:absolute;
+  width:50px;
+  top:2.623em;
+  left:9%;
+  transform:translateX(-100%);
+  display:none;
+}
+
+.options li{
+  padding:.8em 1.4em;
+  background-color:rgba(0,0,0,1);
+  min-width:100px;
+  transition:all .2s linear;
+}
+
+.options a{
+  color:#ffffff;
+  text-decoration:none;
+  padding:.8em 1.2em;
+}
+
+.show{
+  display:block;
+}
+
+.nav ul li ul li:hover{
+  background-color:rgba(45,0,0,1);
+}
+
+.nav ul li ul li{
+  perspective: 1000px;
+  opacity:0;
+  animation: getOptions .3s ease-in-out forwards;
+}
+
+@keyframes getOptions {
+  0%{
+    opacity:0;
+    transform:rotate(-35deg) translateX(45px)
+  } 
+  100%{
+    opacity:1;
+    transform:skew(0) translateX(0)
+  }
+}
+
+.nav ul li ul li:nth-child(1){
+  animation-delay:.1s;
+}
+
+.nav ul li ul li:nth-child(2){
+  animation-delay:.3s
+}
+
+.nav ul li ul li:nth-child(3){
+  animation-delay:.6s
+}
+

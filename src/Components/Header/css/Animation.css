@@ -1,0 +1,26 @@
+/* Title and Description */
+
+.fade-appear{
+  opacity:0.01;
+  transform:translateY(-20px);
+}
+
+.fade-appear.fade-appear-active{
+  opacity:1;
+  transform:translateY(0);
+  transition:all 1s ease-out;
+  transition-delay:1s;
+}
+
+
+/* Quote */
+
+.slowFade-appear{
+  opacity:0.01;
+}
+
+.slowFade-appear.slowFade-appear-active{
+  opacity:1;
+  transition:all 1s ease-out;
+  transition-delay:1.5s;
+}

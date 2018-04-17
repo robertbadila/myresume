@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Slab|Open+Sans+Condensed:300');
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+.about-wraper{
+  width:100%;
+  color:#f4f4f4;
+  background: rgb(0, 0, 0);
+  border-top:2px solid #000;
+  border-bottom:2px solid rgba(45, 0, 0, .4);
+}
+
+.About{
+  
+  border-bottom:1px solid #000;
+  width:70%;
+  margin:0 auto;
+  padding:5px 0 50px 0;
+  text-align:center;
+  position:relative;
+  border-top:2px solid rgba(45, 0, 0, .4);
+}
+
+.about-title{
+  margin:10px 0;
+  padding-bottom:20px;
+  border-bottom:2px solid rgba(45, 0, 0, 0.4);
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+}
+
+.about-grid{
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap:30px;
+}
+
+.box{
+  margin-top:40px;
+  padding:10px 30px;
+  font-family: 'Josefin Slab', serif;
+  transition:all .1s linear;
+}
+
+.box:hover{
+  background-color:rgba(45, 0, 0, 0.4);
+}
+
+.boxone{
+  grid-column:1/4;
+  height:280px;
+  border:none;
+}
+
+.box h1{
+  border:none;
+  font-family: 'Open Sans Condensed', sans-serif;
+}

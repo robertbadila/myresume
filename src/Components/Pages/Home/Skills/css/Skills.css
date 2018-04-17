@@ -1,0 +1,52 @@
+.Skills{
+  width:100%;
+  background-color:#000;
+  color:#f4f4f4;
+  height:696px;
+  border-bottom:2px solid rgba(45, 0, 0, 0.4);
+}
+
+.skills{
+  text-align:center;
+  width:70%;
+  margin:0 auto;
+}
+
+.skills-title{
+  margin:0;
+  padding:20px;
+  border-bottom:2px solid rgba(45, 0, 0, 0.4);
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+}
+.skills-content h1{
+  border:none;
+}
+
+/*////**/
+
+.list-grid{
+  margin-top:60px;
+  display:grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap:2px;
+  background:rgba(139, 75, 75, .5);
+}
+
+.resume{
+  position:relative;
+  top:60px;
+ 
+  text-decoration:none;
+  border:1px solid rgba(45, 0, 0, 0.4);
+  background-color:rgba(45, 0, 0, 1);
+  color:#5e5e5e;
+  padding:1em 1.2em;
+  transition:all .2s ease-in;
+}
+
+.resume:hover{
+  color:#f4f4f4;
+  background:transparent;
+}

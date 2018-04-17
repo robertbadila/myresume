@@ -1,0 +1,78 @@
+.SkillItem{
+  height:200px;
+  width:100%;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size:15px;
+  transition:all .1s linear;
+}
+
+.SkillItem h1{
+  position: relative;
+  top:60px;
+  letter-spacing: 2px;
+  color:#ccc;
+  transition:all .3s linear;
+}
+
+.SkillItem p{
+  position:relative;
+  top:30px;
+  font-size:24px;
+  opacity:0;
+  transition:all .2s ease-in;
+  color:#ccc;
+}
+
+.SkillItem:nth-child(1){
+  background-color:#333333;
+}
+
+
+.SkillItem:nth-child(2){
+  background-color:#161616;
+}
+
+
+.SkillItem:nth-child(3){
+  background-color:#1e1e1e;
+}
+
+
+.SkillItem:nth-child(4){
+  background-color:#333333;
+}
+
+
+.SkillItem:nth-child(5){
+  background-color:#1e1e1e;
+}
+
+
+.SkillItem:nth-child(6){
+  background-color:#161616;
+}
+
+
+.SkillItem:nth-child(7){
+  background-color:#0c0c0c;
+}
+
+
+.SkillItem:nth-child(8){
+  background-color:#0c0c0c;
+}
+
+.SkillItem:hover{
+  transform:translateY(-5px);
+  background-color:rgba(45, 0, 0, 1);;
+  transform:scaleY(1.1);
+}
+
+.SkillItem:hover h1{
+  color:#f4f4f4;
+  transform:translateY(-18px);
+}
+
+.SkillItem:hover p{
+  opacity:1;
+}

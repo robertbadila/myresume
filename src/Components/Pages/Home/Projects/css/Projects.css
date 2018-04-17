@@ -1,0 +1,283 @@
+.projects-wraper{
+  background-color:#000;
+  width:100%;
+  height:100%;
+  color:#f4f4f4;
+  box-shadow: 1px 4px 3px -1px rgba(0,0,0,0.75), 1px 5px 19px -1px rgba(0,0,0,0.75);
+  position:relative;
+  z-index:990;
+}
+
+.Projects{
+  width:70%;
+  text-align:center;
+  margin:0 auto;
+
+}
+
+.projects-wraper h1{
+  margin:0;
+}
+
+.projects-title{
+  margin:0;
+  padding:20px;
+  border-bottom:2px solid rgba(45, 0, 0, 0.4);
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+}
+
+.projects-grid{
+  display:grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(14, 1fr);
+  height:500px;
+  margin-top:60px;
+  grid-gap:5px;
+  padding-bottom:60px;
+}
+
+.project{
+  background-color:#ccc;
+  width:100%;
+}
+
+.box1{
+  grid-column: 1/5;
+  grid-row:1/11;
+  background:url("../assets/project1.jpg");
+  background-repeat: no-repeat;
+  background-size:1000px 500px;
+}
+
+.box1:hover{
+  background-size:cover;
+}
+
+.box2{
+  grid-column:5/8;
+  grid-row:1/6;
+  background:url("../assets/project2.png");
+  background-repeat: no-repeat;
+  background-size:700px 250px;
+}
+.box2:hover{
+  background-size:cover;
+}
+
+
+.box3{
+  grid-column:5/8;
+  grid-row:6/11;
+  background:url("../assets/project4.jpg");
+  background-repeat: no-repeat;
+  background-size:1000px 500px;
+}
+.box3:hover{
+  background-size:cover;
+}
+
+
+.box4{
+  grid-column:8/13;
+  grid-row:1/15;
+  background:url("../assets/project6.jpeg");
+  background-repeat: no-repeat;
+  background-size:500px 800px;
+}
+.box4:hover{
+  background-size:cover;
+}
+
+
+.box5{
+  grid-column:1/4;
+  grid-row:11/15;
+  background:url("../assets/project3.jpeg");
+  background-repeat: no-repeat;
+  background-size:1000px 500px;
+}
+.box5:hover{
+  background-size:cover;
+}
+
+
+.box6{
+  grid-column:4/6;
+  grid-row:11/15;
+  background:url("../assets/project5.jpeg");
+  background-repeat: no-repeat;
+  background-size:1000px 500px;
+}
+.box6:hover{
+  background-size:cover;
+}
+
+
+.box7{
+  grid-column:6/8;
+  grid-row:11/15;
+  background:url("../assets/project7.jpeg");
+  background-repeat: no-repeat;
+  background-size:1000px 500px;
+}
+.box7:hover{
+  background-size:cover;
+}
+
+
+.project{
+  position:relative;
+}
+
+.project h2{
+  margin:0;
+  position:absolute;
+  top:45%;
+  left:50%;
+  transform:translate(-50%, -50%);
+  transition:all .2s linear;
+  letter-spacing:3px;
+  font-size:15px;
+  color:#f4f4f4;
+  padding:10px;
+  background:rgba(0,0,0,0.75);
+  border-radius:2px;
+}
+
+.project:hover h2{
+  top:10%;
+  transform:translateX(-82%);
+  color:#f4f4f4;
+  background:rgba(0,0,0,0)
+}
+
+.box1 h2{
+  font-size:30px;
+}
+
+.box4 h2{
+  font-size:50px;
+  transition:all .3s linear; 
+}
+
+.box2 h2{
+  font-size:20px;
+}
+
+.box3 h2{
+  font-size:20px;
+}
+
+.box5 h2{
+  font-size:18px;
+}
+
+.box1:hover h2{
+  font-size:20px;
+  transform:translate(-130%,-20%);
+}
+
+.box4:hover h2{
+  font-size:30px;
+  top:8%;
+  left:35%;
+}
+
+.box2:hover h2{
+  font-size:20px;
+  transform:translate(-100%,-20%);
+}
+
+.box3:hover h2{
+  font-size:20px;
+  transform:translate(-100%,-20%);
+}
+
+.box5:hover h2{
+  font-size:20px;
+  transform:translate(-100%,-10%);
+}
+
+
+.project:before{
+  content:'';
+  display:block;
+  position:relative;
+  top:0;
+  left:0;
+  height:100%;
+  width:100%;
+  background-color:rgba(45,0,0,.8);
+  opacity:0;
+  transform:scaleY(0);
+  transition:all .3s linear;
+}
+
+.project:hover:before{
+  opacity:1;
+  transform:scaleY(1);
+}
+
+.project a{
+  color:#ccc;
+  text-decoration:none;
+  font-size:5px;
+}
+
+.read-btn{
+  position:absolute;
+  display:block;
+  top:70%;
+  left:5%;
+  transform:translate(-50%, 0);
+  opacity:0;
+  transition:all .2s linear;
+  transition-delay:.1s;
+}
+
+.project:hover .read-btn{
+  top:50%;
+  transform:translateY(-50%);
+  opacity:1;
+  font-size:16px;
+}
+
+.read-btn:hover{
+  background:#f4f4f4;
+  color:#000;
+  left:10%;
+}
+
+.box1 a{
+  font-size:16px;
+}
+
+.box1:hover .read-btn{
+  font-size:25px;
+}
+
+.box4 a{
+  font-size:18px;
+}
+
+.box4:hover .read-btn{
+  font-size:35px;
+}
+
+.box6 a{
+  font-size:3px;
+}
+
+.box6:hover .read-btn{
+  font-size:15px;
+}
+
+.box7 a{
+  font-size:3px;
+}
+
+.box7:hover .read-btn{
+  font-size:15px;
+}

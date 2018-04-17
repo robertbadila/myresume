@@ -1,0 +1,23 @@
+/*Fonts*/
+@import url('https://fonts.googleapis.com/css?family=Raleway|Work+Sans');
+
+/*
+font-family: 'Raleway', sans-serif;
+font-family: 'Work Sans', sans-serif;
+*/
+
+
+
+
+/* Global Set-up */
+
+body{
+  margin:0;
+  padding:0;
+  font-family: 'Raleway', sans-serif;
+}
+
+html{
+  height:100%;
+  width:100%;
+}
